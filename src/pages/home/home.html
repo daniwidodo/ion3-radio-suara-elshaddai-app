@@ -1,14 +1,66 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content no-padding>
+  <div >
+    <!-- Admob -->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  </div>
+
+  <div class="facebook-page-cover">
+    <!-- FB PAGE COVER! -->
+
+  </div>
+
+  <ion-fab top right style="padding-top: 15%;">
+    <button ion-fab mini color="primary">
+      <ion-icon name="redo"></ion-icon>
+    </button>
+
+  </ion-fab>
+
+  <ion-fab top right >
+    <button ion-fab mini color="dark">
+      <ion-icon name="refresh"></ion-icon>
+    </button>
+
+  </ion-fab>
+
+  <div class="hero-text">
+    RADIO<br>
+    SUARA <br>
+    ELSHADDAY<br>
+    <h4 style="color: gray;">90.4 FM - MASAMBA</h4>
+
+  </div>
+
+  <div class="facebook-feed">
+
+  </div>
+  
 </ion-content>
+
+<ion-footer>
+
+  <!-- -->
+  <ion-item>
+    <button ion-button clear icon-only item-start (click)="playStreaming()" *ngIf="!showButton">
+      <ion-icon name="play"></ion-icon>
+    </button>
+    <button ion-button clear icon-only color="danger" item-start (click)="pauseStreaming()" *ngIf="showButton">
+      <ion-icon name="pause"></ion-icon>
+    </button>
+
+    
+    <p item-end>
+      Hubungi Kami :
+    </p>
+
+    <button ion-button round color="primary" item-end>
+      Facebook
+    </button>
+    <button ion-button round color="secondary" item-end>
+      Whatsapp
+    </button>
+  </ion-item>
+
+  
+  
+</ion-footer>

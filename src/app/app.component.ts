@@ -17,6 +17,11 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+
+    platform.registerBackButtonAction(() => { 
+      console.log('mundur yoo')
+      // if(){}else{}
+    });
   }
 }
 

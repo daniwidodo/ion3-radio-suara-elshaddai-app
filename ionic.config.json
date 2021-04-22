@@ -1,5 +1,7 @@
 {
   "name": "ion3-radio-suara-elshaddai-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

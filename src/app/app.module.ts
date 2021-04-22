@@ -6,6 +6,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { IcecastProvider } from '../providers/icecast/icecast';
+import { FbPageProvider } from '../providers/fb-page/fb-page';
+import { AdmobProvider } from '../providers/admob/admob';
+import { HttpClientModule } from '@angular/common/http';
+import { AdMobFree } from '@ionic-native/admob-free';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +20,11 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpClientModule,
+   
+    IonicModule.forRoot(MyApp),
+    
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +34,10 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    IcecastProvider,
+    FbPageProvider,
+    AdmobProvider,
   ]
 })
 export class AppModule {}

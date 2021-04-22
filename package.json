@@ -19,7 +19,13 @@
     "@angular/forms": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/admob-free": "^4.20.0",
+    "@ionic-native/app-minimize": "^4.20.0",
+    "@ionic-native/app-rate": "^4.20.0",
     "@ionic-native/core": "4.20.0",
+    "@ionic-native/in-app-browser": "^4.20.0",
+    "@ionic-native/music-controls": "^4.20.0",
+    "@ionic-native/social-sharing": "^4.20.0",
     "@ionic-native/splash-screen": "4.20.0",
     "@ionic-native/status-bar": "4.20.0",
     "@ionic/storage": "2.2.0",
@@ -31,7 +37,23 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.4",
+    "cordova-plugin-admob-free": "^0.27.0",
+    "cordova-plugin-appminimize": "^1.0.1",
+    "cordova-plugin-apprate": "^1.7.2",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-music-controls": "^2.2.0",
+    "cordova-plugin-x-socialsharing": "^6.0.3",
     "typescript": "2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-music-controls": {},
+      "cordova-plugin-admob-free": {},
+      "cordova-plugin-appminimize": {},
+      "cordova-plugin-apprate": {},
+      "cordova-plugin-x-socialsharing": {}
+    }
+  }
 }
